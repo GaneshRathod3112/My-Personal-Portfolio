@@ -1,0 +1,662 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: "Roboto Slab", serif;
+}
+
+.url-icon{
+    border-radius: 50%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+/* <!-- ======================== navbar start ================== --> */
+
+.nav {
+    width: 100%;
+    height: 4vw;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    border-bottom: 0.1vw solid rgba(245, 245, 245, 0.393);
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-back-image {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("logo\ back2.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3vw;
+    margin-left: 2vw;
+}
+
+.nav-list ul{
+    display: flex;
+    text-align: center;
+}
+
+.nav-list li {
+    margin-right: 3vw;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.5vw;
+    transition: all 1s ease-in-out;
+    background-color: transparent;
+}
+
+
+.nav-list li a:hover {
+    cursor: pointer;
+    background: rgba(14, 183, 239, 0.963);
+    color: black;
+    border-radius: 15px 2px;
+    padding: 0px 1vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw 0.5vw rgba(66, 239, 14, 0.963) inset;
+
+}
+
+.nav-list li button{
+    display: none;
+}
+
+.toggle{
+    display: none;
+}
+
+.toggle img{
+    width: 2vw;
+    height: 2vw;
+    background-color: whitesmoke;
+}
+
+#close-img{
+    display: none;
+}
+
+/* <!-- ======================== navbar end ================== --> */
+
+/* <!-- ======================== home start ================== --> */
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vw;
+}
+
+.intro {
+    width: 50%;
+    margin-left: 3vw;
+    margin-top: 5vw;
+    /* background-color: brown; */
+    justify-content: center;
+    text-align: center;
+}
+
+.intro h3 {
+    font-size: 3vw;
+}
+
+.intro h1 {
+    font-size: 5vw;
+    margin: 1vw 0px;
+}
+
+.intro h5 {
+    font-size: 2vw;
+    line-height: 4vw;
+    margin-top: 2vw;
+    font-family: "Dancing Script", cursive;
+}
+
+.intro h5 span {
+    color: black;
+    background-color: rgb(15, 241, 15);
+    border-radius: 3vw;
+    padding: 0.3vw 2vw;
+}
+
+.intro button {
+    margin-top: 4vw;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0.3vw 2vw;
+    border-radius: 1vw;
+    color: black;
+    background-color: rgb(249, 142, 11);
+}
+
+.home-img {
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+}
+
+.profile {
+    width: 40vw;
+    border-radius: 0px 5vw;
+}
+
+.resume{
+    width: 72vw;
+    margin: auto;
+}
+
+.ifram{
+    width: 72vw;
+    height: 70vh;
+    margin-top: 2vw;
+}
+
+.btn{
+    margin:2vw 41vw;
+}
+
+button .resume-download {
+    display: inline;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0.3vw 2vw;
+    border-radius: 1vw;
+    color: black;
+    background-color: rgb(249, 142, 11);
+}
+
+/* <!-- ======================== home end ================== --> */
+
+/* <!-- ======================== about start ================== --> */
+
+#about {
+    display: flex;
+    margin-top: 8vw;
+}
+
+.about-avtar {
+    width: 30%;
+}
+
+.avtar {
+    width: 15vw;
+    margin-left: 8vw;
+    border-radius: 50%;
+}
+
+.links {
+    margin-top: -2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.links h1 {
+    font-size: 3vw;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+}
+
+.icon {
+    width: 4vw;
+    border-radius: 50%;
+}
+
+.about-info {
+    width: 70%;
+    margin-top: 1vw;
+}
+
+.about-info h3 {
+    font-size: 2vw;
+    background-color: rgb(27, 26, 26);
+    display: inline;
+    padding: 0px 1vw;
+    border-radius: 5px;
+}
+
+.about-info h2 {
+    font-size: 2vw;
+    color: rgb(249, 142, 11);
+    margin: 2.4vw 0px;
+    line-height: 3vw;
+    font-family: "Dancing Script", cursive;
+}
+
+.about-info h4 {
+    font-size: 1.7vw;
+    font-family: "Dancing Script", cursive;
+}
+
+/* <!-- ======================== about end ================== --> */
+
+/* <!-- ======================== skils start ================== --> */
+
+#skils {
+    justify-content: center;
+    text-align: center;
+    margin-top: 8vw;
+    padding-bottom: 4vw;
+}
+
+#skils h2 {
+    font-size: 2vw;
+    background-color: rgb(27, 26, 26);
+    display: inline;
+    padding: 0px 1vw;
+    border-radius: 5px;
+}
+
+#skils h1 {
+    font-size: 3vw;
+    color: rgb(249, 142, 11);
+    line-height: 3vw;
+    margin: 4vw 0px;
+}
+
+.skils-icons {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.skils-icons img {
+    height: 6vw;
+    width: 6vw;
+    border-radius: 5px;
+}
+
+.skils-icons h1 {
+    font-size: 2vw;
+    color: whitesmoke;
+}
+
+/* <!-- ======================== skils end ================== --> */
+
+/* <!-- ======================== projects start ================== --> */
+
+#project {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8vw;
+}
+
+.project-h2 {
+    font-size: 2vw;
+    background-color: rgb(27, 26, 26);
+    display: inline;
+    margin-left: 46vw;
+    padding: 0px 1vw;
+    border-radius: 5px;
+}
+
+.frouitmart , .Book-gallary , .It-perfect {
+    width: 25vw;
+}
+
+.frouitmart img , .Book-gallary img , .It-perfect img{
+    width: 25vw;
+    height: 17vw;
+    border: 5px groove whitesmoke;
+}
+
+.It-perfect:hover,
+.frouitmart:hover,
+.Book-gallary:hover {
+    cursor: pointer;
+    transition: all 1s;
+    padding: 1.5vw;
+}
+
+.view-project button {
+    background-color: red;
+    padding: 0.3vw 2vw;
+    font-size: 1vw;
+    margin: 0vw 10vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.It-perfect p,
+.frouitmart p,
+.Book-gallary p {
+    font-size: 1.5vw;
+    text-align: center;
+    border: 2px solid white;
+    margin-left: 1.5vw;
+    padding: 0.4vw;
+    font-family: "Dancing Script", cursive;
+}
+
+/* <!-- ======================== project end ================== --> */
+
+/* <!-- ======================== bottom start ================== --> */
+
+.bottom {
+    border: 1px solid whitesmoke;
+    display: flex;
+    margin-top: 5vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw 0px;
+}
+
+.text {
+    font-size: 1vw;
+    display: flex;
+    gap: 10vw;
+    margin-left: 3vw;
+
+}
+
+.profile-links {
+    display: flex;
+    margin-right: 3vw;
+}
+
+.bottom-icon {
+    width: 3vw;
+    margin-left: 2vw;
+    border-radius: 50%;
+}
+
+/* <!-- ======================== bottom end ================== --> */
+
+/* <!-- ======================= responsivenes start ================== --> */
+
+@media (max-width:600px) {
+    /* =============== nav ============= */
+    .nav{
+        height: 13vw;
+    }
+
+    .logo-back-image {
+        font-size: 10vw;
+        margin-left: 4vw;
+    }
+
+    .nav-list li button{
+        display: block;
+    }
+
+    .toggle img{
+        width: 6vw;
+        height: 4vw;
+        padding: 1vw 1vw;
+        margin-left: -10vw;
+    }
+
+    .nav-list #menu{
+        display:flex;
+        height: 88vh;
+        flex-direction: column;
+        position: absolute;
+        top: 13vw;
+        left: 0vw;
+        display: none;
+    }
+    #menu li{
+        width: 40vw;
+        justify-content: center;
+    }
+
+    #menu a{
+        font-size: 5vw;
+        margin: 6vw;
+        
+    }
+
+    .toggle{
+        display: block;
+    }
+
+    #close-img{
+        width: 5vw;
+        padding: 1vw 1vw;
+        margin-left: -10vw;
+    }
+
+   /* =============== home ============= */
+   
+    .home {
+        width: 100%;
+        display: block;
+    }
+
+    .intro {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .intro h3 {
+        font-size: 6vw;
+        margin-top: 8vw;
+    }
+    
+    .intro h1 {
+        font-size: 8vw;
+        margin: 5vw 0px;
+    }
+    
+    .intro h5 {
+        font-size: 4vw;
+        line-height: 8vw;
+    }
+
+    .intro button {
+        margin-top: 4vw;
+        font-size: 3vw;
+    }
+    
+    .home-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profile {
+        width: 80vw;
+        border-radius: 0px 5vw;
+        margin-top: 8vw;
+    }
+
+    .resume{
+        width: 77vw;
+    }
+    
+    .ifram{
+        width: 75vw;
+        
+    }
+    
+    .btn{
+        margin:3vw 29vw;
+    }
+    
+    button .resume-download {
+        font-size: 3vw;
+    }
+
+    /* =============== about ============= */
+
+    #about {
+        width: 100%;
+        display:flex;
+        flex-direction:column-reverse;
+        margin-top: 13vw;
+    }
+    
+    .about-avtar {
+        width: 40%;
+        margin: auto;
+    }
+    
+    .avtar {
+        width: 40vw;
+        margin: auto;
+        margin-top: 10vw;
+        
+    }
+    
+    .links h1{
+        font-size: 6vw;
+        margin-top: -3vw;
+    }
+
+    .icons{
+        padding: 1vw 0px;
+    }
+
+    .icon{
+        width: 8vw;
+    }
+
+    .about-info {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .about-info h3 {
+        font-size: 4vw;
+        padding: 0px 5vw;
+    }
+    
+    .about-info h2 {
+        font-size: 5vw;
+        line-height: 8vw;
+        margin-top: 8vw;
+    }
+    
+    .about-info h4 {
+        font-size: 3.5vw;
+        margin: 0px 10vw;
+        line-height: 7vw;
+    }
+
+    /* .resume{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: green;
+
+    } */
+
+    /* =============== skills ============= */
+
+    #skils h2 {
+        font-size: 4vw;
+        padding: 0px 5vw;
+    }
+    
+    #skils h1 {
+        font-size: 5vw;
+        line-height: 8vw;
+        margin-top: 7vw;
+    }
+    
+    .skils-icons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .skils-icons div{
+        padding: 0px 5vw;
+    }
+    
+    .skils-icons img {
+        height: 12vw;
+        width: 12vw;
+        margin-bottom: -3vw;
+    }
+
+    /* =============== project ============= */
+
+    #project {
+        display:block;
+        margin-bottom: 55vw;
+    }
+    
+    .project-h2 {
+        font-size: 4vw;
+        padding: 0px 5vw;
+        margin-left: 38vw;
+    }
+
+    .frouitmart {
+        width: 58vw;
+        margin: auto;
+        margin-top: 15vw;
+    }
+    
+    .Book-gallary , .It-perfect {
+        width: 58vw;
+        margin: auto;
+        margin-top: 15vw;
+    }
+
+    .frouitmart img , .Book-gallary img , .It-perfect img{
+        width: 80vw;
+        height: 40vw;
+        margin-left: -11vw;
+    }
+
+    .view-project button {
+        font-size: 3vw;
+        padding: 1vw 2vw;
+        margin-left: 17vw;
+    }
+    
+    .It-perfect p,
+    .frouitmart p,
+    .Book-gallary p {
+        font-size: 3vw;
+        padding: 3vw 0px;
+        line-height: 5vw;
+        background-size: auto;
+    }
+
+    /* =============== bottom ============= */
+
+    .bottom {
+        margin-top: -40vw;
+        padding: 2vw 0px;
+        position: sticky;
+        bottom: 0px;
+    }
+    
+    .text {
+        font-size: 2vw;
+        gap: 5vw;
+        margin-left: 1.5vw;
+    
+    }
+    
+    .bottom-icon {
+        width: 3vw;
+        margin-left: 2vw;
+        border-radius: 50%;
+    }
+}
